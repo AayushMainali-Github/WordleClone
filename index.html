@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="title"><span>W</span><span>O</span><span>R</span><span>D</span><span>L</span><span>E</span></div>
+      <button onclick="play()" id="play">Play</button>
+      <div id="game"></div>
+      <div id="keyboard">
+        <div>
+          <button onclick="letter(this.innerText)">Q</button><button onclick="letter(this.innerText)">W</button><button onclick="letter(this.innerText)">E</button
+          ><button onclick="letter(this.innerText)">R</button><button onclick="letter(this.innerText)">T</button><button onclick="letter(this.innerText)">Y</button
+          ><button onclick="letter(this.innerText)">U</button><button onclick="letter(this.innerText)">I</button><button onclick="letter(this.innerText)">O</button
+          ><button onclick="letter(this.innerText)">P</button>
+        </div>
+        <div>
+          <button onclick="letter(this.innerText)">A</button><button onclick="letter(this.innerText)">S</button><button onclick="letter(this.innerText)">D</button
+          ><button onclick="letter(this.innerText)">F</button><button onclick="letter(this.innerText)">G</button><button onclick="letter(this.innerText)">H</button
+          ><button onclick="letter(this.innerText)">J</button><button onclick="letter(this.innerText)">K</button><button onclick="letter(this.innerText)">L</button>
+        </div>
+        <div>
+          <button onclick="backspace()">Backspace</button><button onclick="letter(this.innerText)">Z</button><button onclick="letter(this.innerText)">X</button
+          ><button onclick="letter(this.innerText)">C</button><button onclick="letter(this.innerText)">V</button><button onclick="letter(this.innerText)">B</button
+          ><button onclick="letter(this.innerText)">N</button><button onclick="letter(this.innerText)">M</button><button onclick="enter()">Enter</button>
+        </div>
+      </div>
+    </div>
+    <div id="popup">
+      <div id="popupmsg"></div>
+      <button onclick="playagain()">Play Again</button>
+    </div>
+  </body>
+  <script src="main.js"></script>
+  <script src="wordlist.js"></script>
+</html>
