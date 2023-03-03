@@ -1,3 +1,3 @@
-wordle clone insipired from https://wordlegame.org/ <br>
+wordle clone <br>
 https://aayushmainali-github.github.io/WordleClone/
  
