@@ -30,7 +30,7 @@ play = () => {
   });
 
   boxNo = "box11";
-  word = "table";
+  word = wordlist[Math.floor(Math.random() * wordlist.length)];
 };
 enter = () => {
   if (boxNo[4] == "6") {
